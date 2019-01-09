@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Web Agency</title>
+        <meta description="Site d'agence web">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="LDM">
+        
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" type="image/png" href="css/images/icon.png">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-title">
+                <a href="#"><img id="logo" src="css/images/logo.png" alt="Web Agency logo"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Menu de navigation
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#carousel" >Accueil</a>
+                    <a href="#services" >Services</a>
+                    <a href="#portfolio" >Portfolio</a>
+                    <a href="#contact" >Contact</a>
+                </div>
+            </div> 
+            <ul  id="container" class="navbar-menu">
+                <li class="element"><a href="#carousel" >Accueil</a></li>
+                <li class="element"><a href="#services" >Services</a></li>
+                <li class="element"><a href="#portfolio" >Portfolio</a></li>
+                <li class="element"><a href="#contact" >Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="content">
+            <section id="carousel">
+                <div class="container">
+
+                    <div class="carousel">
+                        <div class="img-text">
+                            <h2><span class="main-color">WEBAGENCY</span>: L'AGENCE DE TOUS VOS PROJETS !</h2>
+                            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                            <br>
+                            <a href="#portfolio" type="button" class="button btn-slider">Plus d'infos</a>    
+                        </div>
+                        <input id="image1" type="radio" name="image-selector" checked="checked" />
+                        <label for="image2"><span class="fas fa-chevron-left"></span></label>
+                        <img src="css/images/slider/bg1.jpg" />
+                        <input id="image2" type="radio" name="image-selector" />
+                        <label for="image1"><span class="fas fa-chevron-left"></span></label>
+                        <img src="css/images/slider/bg2.jpg" />
+                        <label for="image2"><span class="fas fa-chevron-right"></span></label>
+                        <label for="image1"><span class="fas fa-chevron-right"></span></label>
+                    </div>
+
+                </div>
+
+            
+            </section>
+
+            <section id="services">
+                <h2>NOS SERVICES</h2>
+                <div class="divider"><span class="blue-circle"></span></div>
+                <p>A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard</p>
+                <div class="services-container">
+                    <img id="logo-feature" src="css/images/main-feature.png" alt="Logo Main Feature">
+                    <ul class="feature-list">
+                        <li>
+                            <img class="feature-logo" alt="Logo feature" src="css/images/feature1.png">
+                            <h4>UX design</h4>
+                            <p>A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak.</p>
+                        </li>
+                        <li>
+                            <img class="feature-logo" alt="Logo feature" src="css/images/feature2.png">
+                            <h4>UI design</h4>
+                            <p>A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak.</p>
+                        </li>
+                        <li>
+                            <img class="feature-logo" alt="Logo feature" src="css/images/feature3.png">
+                            <h4>SEO</h4>
+                            <p>A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2>NOS PROJETS</h2>
+                <div class="divider"><span class="blue-circle"></span></div>
+                <p>A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard</p>
+                <div class="project-container">
+                    <ul id="portfolio-navbar">
+                        <li><a href="#" class="active">All Works</a><span class="arrow-down"></span></li>
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">Corporate</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="project-container">
+                    <ul class="project-array">
+                        <li class="element"><a><img src="css/images/portfolio/01.jpg" alt="Img Portfolio #01"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 1</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>
+                        <li class="element"><a><img src="css/images/portfolio/02.jpg" alt="Img Portfolio #02"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 2</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>                        
+                        <li class="element"><a><img src="css/images/portfolio/03.jpg" alt="Img Portfolio #03"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 3</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>
+                        <li class="element"><a><img src="css/images/portfolio/04.jpg" alt="Img Portfolio #04"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 4</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>
+                        <li class="element"><a><img src="css/images/portfolio/05.jpg" alt="Img Portfolio #05"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 5</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>
+                        <li class="element"><a><img src="css/images/portfolio/06.jpg" alt="Img Portfolio #06"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 6</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>
+                        <li class="element"><a><img src="css/images/portfolio/07.jpg" alt="Img Portfolio #07"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 7</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>
+                        <li class="element"><a><img src="css/images/portfolio/08.jpg" alt="Img Portfolio #08"></a>
+                        <div class="description">
+                            <span class="project-logo"><i class=" far fa-eye"></i></span>
+                            <span><h4>Portfolio item 8</h4><p>A Lorem Ipsum egy egyszerû</p></span>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>NOUS CONTACTER</h2>
+                <div class="contact-container">
+                    <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=25%20Rue%20d'Hauteville%2075010%20Paris+(Contact%20info)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe>                
+                    </div>
+                    <div>
+                        <form id="contact-form">
+                            <h4>Contact Info</h4>
+                            <h6>WebAgency SAS</h6>
+                            <p>25 Rue d'Hauteville 75010 Paris <br>
+                            Tél: 01 02 03 04 05</p>
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Subject" required>
+                            <textarea type="text" placeholder="Message" maxlength="255" required></textarea>
+                            <input id="submit-form" type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <footer>
+                <p>Copyright &copy; 2018 Tous droits réservés.</p>
+            </footer>
+            <!-- END CONTENT -->
+        </div>
+        
+        
+        
+    </body>
+</html>
