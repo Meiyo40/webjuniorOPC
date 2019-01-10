@@ -132,9 +132,6 @@ nav li a:hover, nav li a:active {
         margin: 0;
         margin-top: 10px;
     }
-    .dropdown:hover > .dropdowncontent{
-        
-    }
     .dropdown{
         display: flex;
         flex-direction: column;
