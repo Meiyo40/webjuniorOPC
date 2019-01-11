@@ -5,11 +5,13 @@
     letter-spacing: -1px;
 }
 /*GENERAL*/
+html{
+    font-size: 15px;
+}
 body{
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 15px;
     font-family: 'mainFont', sans-serif;
 }
 @font-face{
@@ -63,7 +65,7 @@ nav > ul > li > a{
 }
 nav li a:hover, nav li a:active {
     margin-top: 0;
-    border-top: 2px solid #12b1e4;
+    border-top: 2px solid rgba(92,173,211);
 }
 
 #logo{
@@ -161,13 +163,13 @@ nav li a:hover, nav li a:active {
 
 
 /*CARROUSEL*/
-.container{
+.carousel{
     padding-top: 62px;
 }
 #i1,#i2{
     display: none;
 }
-.container{
+.carousel{
     margin: 0 auto;
 	position: relative;
     width: 100%;
@@ -187,7 +189,7 @@ nav li a:hover, nav li a:active {
     transition: .45s;
     cursor: pointer;
     text-align: center;
-    color: white;
+    color: #fff;
     background: rgba(51,51,51,0.3)
 }
 .prev{
@@ -211,8 +213,11 @@ nav li a:hover, nav li a:active {
 .slide_img{z-index: -1;}
 
 @media screen and (max-width: 1600px){
-    .container{
+    .carousel{
         width: 100%;
+    }
+    .img-text > *{
+        font-size: 1em;
     }
 }
 
@@ -250,16 +255,13 @@ nav li a:hover, nav li a:active {
 	color: #12b1e4;
 }
 .btn-slider{
-	padding: 15px;
+	padding: 12px;
 	background-color: #12b1e4;
     color: white;
     font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
-    -webkit-box-shadow: 0px 2px 1px 2px rgba(55,123,168,1);
-    -moz-box-shadow: 0px 2px 1px 2px rgba(55,123,168,1);
-    box-shadow: 0px 2px 1px 2px rgba(55,123,168,1);
-    Copy Text
+    border-bottom: 2px solid #4494BB;
 }
 .carousel > img {
   display:none;
@@ -350,7 +352,9 @@ nav li a:hover, nav li a:active {
 }
 
 /*SERVICES*/
-
+#services{
+    background-color: #fff;
+}
 .divider{
     position: relative;
     display: flex;
@@ -437,13 +441,24 @@ nav li a:hover, nav li a:active {
     color: #fff;
     
 }
+.project-container{
+    width: 100%;
+}
+#portfolio-navbar > li:last-child > a{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#portfolio-navbar > li:first-child > a{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
 .active{
-    border-radius: 3px;
     background: #12b1e4 !important;
     color: #fff !important;
     font-weight: bold;
-    box-shadow: 0 3px 0 0 rgba(7,73,95,0.7);
+    box-shadow: 0 -3px 0 0 #468cad inset;
 }
+/*TODO seul gauche & droite arrondi*/
 .arrow-down {
     position: relative;
     display: inline-block;
@@ -451,8 +466,8 @@ nav li a:hover, nav li a:active {
     height: 0; 
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid rgba(14,146,190,0.9);
-    top: 22px;
+    border-top: 10px solid #468cad;
+    top: 23px;
     left: -62%;
     margin-right: -20px;
 }
@@ -462,7 +477,9 @@ nav li a:hover, nav li a:active {
     flex-wrap: wrap;
     flex-direction: row;
     list-style-type: none;
-    justify-content: center;
+    width: 900px;
+    padding-top: 40px;
+    margin: 0 auto;
 }
 .project-array > li > a > img{
     padding: 10px;
@@ -532,8 +549,8 @@ nav li a:hover, nav li a:active {
 #contact-form{
     position: absolute;
     margin-right: 30px;
-    background: rgb(222,222,222,1);
-    max-width: 200px;
+    background: rgba(255,255,255,0.8);
+    max-width: 300px;
     padding: 5px;
     border-radius: 7px;
     top: 80px;
@@ -541,6 +558,7 @@ nav li a:hover, nav li a:active {
 }
 #contact-form > *{
     margin-left: 4px;
+    padding: 3px;
 }
 #contact-form > h4{
     font-size: 20px;
