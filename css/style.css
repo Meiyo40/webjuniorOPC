@@ -7,20 +7,20 @@
 /*GENERAL*/
 html{
     font-size: 1rem;
+    font-family: 'FontAwesome', sans-serif;
 }
 body{
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'mainFont', sans-serif;
 }
 @font-face{
-    font-family: 'mainFont';
+    font-family: 'FontAwesome';
     src: url('/fonts/FontAwesome.otf') format('otf'),
-        url('/fonts/FontAwesome.eot') format('eot'),
-        url('/fonts/FontAwesome.svg') format('svg'),
-        url('/fonts/FontAwesome.ttf') format('ttf'),
-        url('/fonts/FontAwesome.woff') format('woff');
+        url('/fonts/fontawesome-webfont.eot') format('eot'),
+        url('/fonts/fontawesome-webfont.svg') format('svg'),
+        url('/fonts/fontawesome-webfont.ttf') format('ttf'),
+        url('/fonts/fontawesome-webfont.woff') format('woff');
 }
 .main-color{
     color: var(--main-text-color);
@@ -44,15 +44,14 @@ nav{
     margin-bottom: 52px;
 }
 
-nav ul{
+nav > ul{
     padding: 0;
     float:right;
     margin-right: 10%;
 }
 
-nav ul li{
+nav > ul > li{
     display: inline-block;
-    list-style-type: none;
 }
 
 nav > ul > li > a{
@@ -67,11 +66,13 @@ nav li a:hover, nav li a:active {
     margin-top: 0;
     border-top: 2px solid rgba(92,173,211);
 }
-
+.navbar-menu > ul{
+    height: 100%;
+}
 #logo{
     float: left;
     position: relative;
-    margin: 10px 0 15px 10px;
+/*    margin: 10px 0 15px 10px;*/
     padding-left: 10%;
 }
 .dropbtn{
@@ -112,92 +113,6 @@ nav li a:hover, nav li a:active {
     display: flex;
 }
 
-
-@media screen and (min-width:780px){
-    .dropdown{
-        display: none;
-    }
-}
-@media screen and (max-width: 780px){
-    #carousel{
-        padding-top: 52px;
-    }
-    #logo{
-        float:none;
-        width: 200px;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        margin-top: 10px;
-    }
-    .dropdown{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .navbar-menu{
-        display: none;
-    }
-    .img-text{
-        top: 10%;
-    }
-    .img-text > p {
-        max-width: 200px;
-    }
-    .img-text > h2{
-        max-width: 200px;
-        margin-bottom: 5px;
-    }
-    .btn-slider{
-        letter-spacing: 0px;
-    }
-    .img-text > *{
-        font-size: 0.9em !important;
-    }
-}
-@media screen and (max-width: 480px){
-    #carousel{
-        padding-top: 52px;
-    }
-    #logo{
-        float:none;
-        width: 200px;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        margin-top: 10px;
-    }
-    .dropdown{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .navbar-menu{
-        display: none;
-    }
-    .img-text{
-        top: 10%;
-    }
-    .img-text > p {
-        max-width: 170px;
-    }
-    .img-text > h2{
-        max-width: 180px;
-    }
-    .btn-slider{
-        padding: 5px !important;
-        letter-spacing: 0px;
-    }
-    .img-text > *{
-        font-size: 0.7em !important;
-    }
-}
-
-
-
-
-
-
 /*CARROUSEL*/
 .carousel{
     padding-top: 62px;
@@ -212,10 +127,24 @@ nav li a:hover, nav li a:active {
     height: 0;
     padding-bottom: 38%;
     user-select: none;
+    position:relative;
+}
+.slide_img{
+    z-index: -1;
 }
 .slide_img > img{
     max-width: 100%;
     height: auto;
+}
+.slider {
+	overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.slider.closed {
+	max-height: 0;
 }
 .prev, .next{
     width: 1%;
@@ -240,31 +169,12 @@ nav li a:hover, nav li a:active {
     border-bottom-left-radius: 100px;
     border-top-left-radius: 100px;
 }
-
 .prev:hover, .next:hover{
     transition: .3s;
     background-color: rgba(88, 88, 89,.8);
     color: #fff; 
 }
-.slide_img{z-index: -1;}
-
-.slider {
-	overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
-	transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-}
-.slider.closed {
-	max-height: 0;
-}
-
-.carousel {
-  position:relative;
-  margin:0px auto;
-}
 .carousel > .img-text{
-    font-family: 'mainFont' sans-serif;
 	position:absolute;
 	color: #fff;
 	text-decoration: none;
@@ -274,9 +184,6 @@ nav li a:hover, nav li a:active {
 }
 .img-text > h2{
     text-align: left;
-}
-.main-color{
-	color: #12b1e4;
 }
 .btn-slider{
 	padding: 12px;
@@ -311,7 +218,6 @@ nav li a:hover, nav li a:active {
   display:block;
   right:0;
 }
-
 .carousel > label {
     position:absolute;
     top:47%;
@@ -429,16 +335,6 @@ nav li a:hover, nav li a:active {
 .feature-logo{
     float: left;
     padding-right: 15px;
-}
-
-
-@media screen and (max-width: 780px){
-    #logo-feature{
-        margin: 0 auto;
-    }
-    .services-container{
-        flex-direction: column;
-    }
 }
 
 /*PORTFOLIO*/
@@ -638,7 +534,54 @@ textarea{
     left: 0px;
     z-index: 2;
 }
-@media screen and (max-width: 720px){
+
+@media screen and (min-width:780px){
+    .dropdown{
+        display: none;
+    }
+}
+@media screen and (max-width: 780px){
+    #logo-feature{
+        margin: 0 auto;
+    }
+    .services-container{
+        flex-direction: column;
+    }
+    #carousel{
+        padding-top: 52px;
+    }
+    #logo{
+        float:none;
+        width: 200px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .img-text{
+        top: 10%;
+    }
+    .img-text > p {
+        max-width: 200px;
+    }
+    .img-text > h2{
+        max-width: 200px;
+        margin-bottom: 5px;
+    }
+    .btn-slider{
+        letter-spacing: 0px;
+    }
+    .img-text > *{
+        font-size: 0.9em !important;
+    }
     #contact-form{
         position: relative;
         top: 0;
@@ -646,6 +589,21 @@ textarea{
         left: 0;
         margin: 0 auto;
         background-color: rgb(234,233,224);
+    }
+}
+@media screen and (max-width: 480px){
+    .img-text > p {
+        max-width: 170px;
+    }
+    .img-text > h2{
+        max-width: 180px;
+    }
+    .btn-slider{
+        padding: 5px !important;
+        letter-spacing: 0px;
+    }
+    .img-text > *{
+        font-size: 0.7em !important;
     }
 }
 
