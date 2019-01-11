@@ -583,7 +583,8 @@ nav li a:hover, nav li a:active {
     letter-spacing: 0.3px;
 }
 #contact-form > input, textarea{
-    width: 280px !important;
+    padding:  6px;
+    width: 275px;
 }
 textarea{
     height: 100px !important;
@@ -594,17 +595,18 @@ textarea{
 }
 #submit-form{
     padding: 7px;
-	background-color: #12b1e4;
-    color: white;
+	background-color: #5cadd3;
+    color: #fff;
     font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
     border: 0;
+    width: 100px !important;
 }
 #googlemap-overlay{
     width: 100%;
     height: 100%;
-    background: #12b1e4;
+    background: #5cadd3;
     position: absolute;
     opacity: 0.3;
     top: 0px;
