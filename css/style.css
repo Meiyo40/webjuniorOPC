@@ -150,18 +150,7 @@ nav li a:hover, nav li a:active {
     color: #fff;
     background: rgba(51,51,51,0.3)
 }
-.prev{
-    padding: 20px 20px 20px 0;
-    left:0;
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
-}
-.next{
-    padding: 20px 7px 20px 13px;
-    right: 0;
-    border-bottom-left-radius: 100px;
-    border-top-left-radius: 100px;
-}
+
 .prev:hover, .next:hover{
     transition: .3s;
     background-color: rgba(88, 88, 89,.8);
@@ -324,9 +313,28 @@ nav li a:hover, nav li a:active {
     float: right;
     list-style-type: none;
 }
-.feature-logo{
-    float: left;
-    padding-right: 15px;
+.feature-list > li{
+    display: flex;
+}
+.feature-text{
+    padding-bottom: 1rem;
+}
+.feature-text > p, .feature-text > h4{
+    margin: 0.6rem;
+    line-height: 1.4rem;
+}
+.circle-icon{
+    margin-top: 0.8rem;
+    margin-right: 0.6rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 1.3rem;
+    border: 2px solid rgba(51,51,51,0.3);;
+    border-radius: 50%;
+}
+.service-icon{
+    padding: 3px;
+    color: #12b1e4;
 }
 /*PORTFOLIO*/
 #portfolio{
@@ -527,6 +535,7 @@ textarea{
     }
 }
 @media screen and (max-width: 780px){
+    *{font-size: 0.85rem}
     .navbar{
         flex-direction: column;
         height: 6.5rem;
@@ -562,6 +571,19 @@ textarea{
     }
     .navbar-menu{
         display: none;
+    }
+    .fa-chevron-left, .fa-chevron-right{
+        margin-top: 50%;
+    }
+    .fa-chevron-left{
+        padding: 10px 10px 10px 3px;
+        border-bottom-right-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+    .fa-chevron-right{
+        padding: 10px 3px 10px 10px;
+        border-bottom-left-radius: 60px;
+        border-top-left-radius: 60px;
     }
     .img-text{
         top: 10%;
