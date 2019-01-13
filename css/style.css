@@ -7,26 +7,28 @@
 /*GENERAL*/
 html{
     font-size: 1rem;
-    font-family: 'FontAwesome', sans-serif;
+    font-family: 'Halflings', sans-serif;
 }
 body{
     height: 100%;
     margin: 0;
     padding: 0;
+    word-spacing: -0.7rem;
 }
 @font-face{
-    font-family: 'FontAwesome';
-    src: url('/fonts/FontAwesome.otf') format('otf'),
-        url('/fonts/fontawesome-webfont.eot') format('eot'),
-        url('/fonts/fontawesome-webfont.svg') format('svg'),
-        url('/fonts/fontawesome-webfont.ttf') format('ttf'),
-        url('/fonts/fontawesome-webfont.woff') format('woff');
+    font-family: 'Halflings';
+    src:url('fonts/glyphicons-halflings-regular.eot') format('eot'),
+        url('fonts/glyphicons-halflings-regular.svg') format('svg'),
+        url('fonts/glyphicons-halflings-regular.ttf') format('ttf'),
+        url('fonts/glyphicons-halflings-regular.woff') format('woff');
 }
 .main-color{
     color: var(--main-text-color);
 }
 h2{
-    font-family: "mainFont" sans-serif;
+    font-family: "Halflings" sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
     font-weight: bold;
     text-align: center;
 }
@@ -160,14 +162,25 @@ nav li a:hover, nav li a:active {
 	position:absolute;
 	color: #fff;
 	text-decoration: none;
-    max-width: 500px;
-    top: 32%;
-    left: 10%;
+    max-width: 680px;
+    top: 30%;
+    left: 18%;
+    font-weight: 600;
 }
 .img-text > h2{
     text-align: left;
+    margin-left: -2.2rem;
+    word-spacing: -1.8rem;
+    letter-spacing: -0.2rem;
+    line-height: 2.4rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    transform: scale(0.9,1);
+    font-weight: 700;
 }
 .btn-slider{
+    position: relative;
+    top: 1rem !important;
 	padding: 12px;
 	background-color: var(--main-text-color);
     color: #fff;
@@ -427,22 +440,22 @@ nav li a:hover, nav li a:active {
 }
 .project-logo{
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 28px;
+    width: 28px;
     background: var(--main-text-color);
     color: var(--main-text-color);
     border-radius: 50%;
     border: 2px solid #fff;
     display: flex;
     right:10px;
-    top: -12px;
+    top: -16px;
     opacity: 1;
 }
 .fa-eye{
     font-size: 0.70rem !important;
     text-align: center;
-    margin-top: 4.5px;
-    margin-left: 4px;
+    margin-top: 8px;
+    margin-left: 8px;
 }
 .description > span{
     font-size: 14px;
@@ -537,10 +550,20 @@ textarea{
     left: 0px;
     z-index: 2;
 }
+@media screen and (max-width: 1200px){
+    .carousel > .img-text{
+        max-width: 500px;
+        left: 5%;
+    }
+    .arrow-down{
+        top: 21px;
+    }
+}
 @media screen and (max-width: 1000px){
     .project-array{
         width: 600px;
     }
+    
 }
 @media screen and (max-width: 600px){
     .project-array{
@@ -556,10 +579,29 @@ textarea{
     }
 }
 @media screen and (max-width: 780px){
+    .carousel > .img-text{
+        width: 400px;
+        left: 5%;
+    }
+    .img-text > h2{
+        margin-left: -1rem;
+        word-spacing: -0.6rem;
+        letter-spacing:0;
+        line-height: 0.8rem;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+    p{
+        word-spacing: -0.6rem;
+        letter-spacing: 0;
+    }
     *{font-size: 0.85rem}
     .navbar{
         flex-direction: column;
         height: 6.5rem;
+    }
+    .description{
+        top: -4.70rem;
     }
     .dropdown-content > a:hover ~ .dropbtn{
         display: none;
@@ -589,6 +631,7 @@ textarea{
         flex-direction: column;
         margin: 0 auto;
         padding-top: 0;
+        
     }
     .navbar-menu{
         display: none;
@@ -606,16 +649,7 @@ textarea{
         border-bottom-left-radius: 60px;
         border-top-left-radius: 60px;
     }
-    .img-text{
-        top: 10%;
-    }
-    .img-text > p {
-        max-width: 200px;
-    }
-    .img-text > h2{
-        max-width: 200px;
-        margin-bottom: 5px;
-    }
+    
     .btn-slider{
         letter-spacing: 0px;
     }
@@ -632,18 +666,32 @@ textarea{
     }
 }
 @media screen and (max-width: 480px){
+    .img-text{
+        max-height: 300px;
+        top: 2rem;
+    }
+    .arrow-down{
+        top: 20px;
+    }
     .img-text > p {
         max-width: 170px;
+        margin-bottom: -6px;
     }
     .img-text > h2{
         max-width: 180px;
+        margin: 17px 0 7px -0.5rem !important;
+        word-spacing: -0.4rem;
+        letter-spacing:0;
+        line-height: 0.68rem;
     }
     .btn-slider{
         padding: 5px !important;
         letter-spacing: 0px;
     }
-    .img-text > *{
-        font-size: 0.7em !important;
+    .img-text > * , .img-text > h2 > span{
+        font-size: 0.55rem !important;
+        word-spacing: -0.4rem;
+        margin: 0;
     }
 }
 /*FOOTER*/
