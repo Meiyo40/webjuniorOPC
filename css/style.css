@@ -188,6 +188,7 @@ nav li a:hover, nav li a:active {
     text-decoration: none;
     border-radius: 4px;
     border-bottom: 2px solid var(--main-text-color);
+    box-shadow: 0 3px 0 0 #4494bb;
 }
 .carousel > img {
   display:none;
@@ -360,7 +361,7 @@ nav li a:hover, nav li a:active {
 #portfolio{
     padding-top: 1px;
     padding-bottom: 30px;
-    background-color: rgb(234,233,224);
+    background-color: #f5f5f5;
 }
 #portfolio-navbar{
     list-style-type: none;
@@ -407,7 +408,7 @@ nav li a:hover, nav li a:active {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #468cad;
-    top: 23px;
+    top: 22px;
     left: -62%;
     margin-right: -20px;
 }
