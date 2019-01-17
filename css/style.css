@@ -716,6 +716,7 @@ textarea{
     .img-text > p{
         max-width: 50%;
         margin-bottom: -0.2rem;
+        margin-left: 1.3rem;
     }    
     .btn-slider{
         padding: 5px !important;
