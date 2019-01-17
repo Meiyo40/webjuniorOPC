@@ -1,8 +1,14 @@
 :root{
     --main-text-color: #5cadd3;
 }
-*{
-    letter-spacing: -1px;
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.ttf') format('ttf'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 /*GENERAL*/
 html{
@@ -13,26 +19,26 @@ body{
     height: 100%;
     margin: 0;
 }
-@font-face {
-    font-family: 'robotoregular';
-    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
-         url('fonts/Roboto-Regular.ttf') format('ttf'),
-         url('fonts/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 .main-color{
     color: var(--main-text-color);
 }
 h2{
-    font-family: "robotoregular", sans-serif;
     font-size: 2rem;
     letter-spacing: -0.1rem;
     font-weight: bold;
     text-align: center;
 }
+.dropdown-content > a,
+.carousel > .img-text,
+.btn-slider,
+#portfolio > li > label,
+#submit-form,
+.element > a
+{
+	text-decoration: none;
+}
 .carousel, 
-.divider, 
+.divider,
 .positionBlueCircle, 
 #services > p, 
 #portfolio > p, 
@@ -48,15 +54,39 @@ h2{
 .project-array{
 	list-style-type: none;
 }
+.project-container,
+.navbar,
+.carousel,
+#googlemap-overlay{
+    width: 100%;
+}
+.navbar,
+.navbar-menu,
+.divider,
+.blue-circle,
+.services-container,
+.feature-list > li,
+#portfolio-navbar,
+.project-array,
+.description,
+.project-logo,
+.dropdown
+{
+	display: flex;
+}
+.navbar,
+.navbar-menu,
+#portfolio-navbar,
+.project-array
+{
+	flex-direction: row;
+}
 /* Navigation */
 .navbar{
     z-index: 99;
     height: 6rem;
-    width: 100%;
     margin-bottom: 52px;
     position: fixed;
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     background-color: #fff;
@@ -65,22 +95,22 @@ h2{
 .navbar-title, .element{
     margin-top: 20px;
 }
-.navbar-menu{
-    display: flex;
-    flex-direction: row;
-}
 .element > a{
     padding-right: 10px;
     padding-left: 10px;
-    text-decoration: none;
     color: #000;
 }
 nav li a:hover, nav li a:active {
     padding-top: 33px;
     border-top: 4px solid var(--main-text-color);
 }
+#logo,
+.dropdown,
+.carousel,
+.btn-slider{
+    position:relative;
+}
 #logo{
-    position: relative;
     padding-left: 10%;
 }
 .dropbtn{
@@ -92,14 +122,13 @@ nav li a:hover, nav li a:active {
     padding-top: 10px;
     margin-bottom: 20px;
     width: 200px;
-    position: relative;
     display: block;
     left: -20px;
 }
 .dropdown-content {
     display: none;
     background-color: #f9f9f9;
-    min-width: 230px;
+    min-width: 260px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 1px 14px;
 	padding-bottom: 10px;
@@ -108,7 +137,6 @@ nav li a:hover, nav li a:active {
 	margin-bottom: 5px;
 }
 .dropdown-content > a {
-    text-decoration: none;
     color: #000;
     padding: 5px;
 }
@@ -130,8 +158,6 @@ nav li a:hover, nav li a:active {
     display: none;
 }
 .carousel{
-	position: relative;
-    width: 100%;
     user-select: none;
     position:relative;
 }
@@ -172,7 +198,6 @@ nav li a:hover, nav li a:active {
 .carousel > .img-text{
 	position:absolute;
 	color: #fff;
-	text-decoration: none;
     max-width: 600px;
     top: 30%;
     left: 10%;
@@ -188,13 +213,11 @@ nav li a:hover, nav li a:active {
     font-weight: 700;
 }
 .btn-slider{
-    position: relative;
     top: 1rem !important;
 	padding: 12px;
 	background-color: var(--main-text-color);
     color: #fff;
     font-weight: bold;
-    text-decoration: none;
     border-radius: 4px;
     border-bottom: 2px solid var(--main-text-color);
     box-shadow: 0 3px 0 0 #4494bb;
@@ -291,7 +314,6 @@ nav li a:hover, nav li a:active {
 }
 .divider{
     position: relative;
-    display: flex;
     width: 10%;
     height: 2px;
     background-color: rgba(51,51,51,0.3);
@@ -304,7 +326,6 @@ nav li a:hover, nav li a:active {
     color: var(--main-text-color);
     border-radius: 50%;
     border: 3px solid #fff;
-    display: flex;
     top: -9px;
     opacity: 1;
 }
@@ -321,15 +342,11 @@ nav li a:hover, nav li a:active {
     line-height: 25px;
 }
 .services-container{
-    display: flex;
     justify-content: space-around;
     max-width: 1100px;
 }
 #logo-feature{
     max-height: 319px;
-}
-.feature-list > li{
-    display: flex;
 }
 .feature-text{
     padding-bottom: 1rem;
@@ -363,15 +380,12 @@ nav li a:hover, nav li a:active {
     background-color: #f5f5f5;
 }
 #portfolio-navbar{
-    flex-direction: row;
     justify-content: center;
-    display: flex;
     padding: 10px;
 }
 #portfolio-navbar > li > label{
     background: rgba(177,187,191,0.3);
     text-align: center;
-    text-decoration: none;
     color: #6f797d;
     padding: 10px;
     font-weight: bold;
@@ -380,9 +394,7 @@ nav li a:hover, nav li a:active {
     background: #12b1e4;
     color: #fff;
 }
-.project-container{
-    width: 100%;
-}
+
 #portfolio-navbar > li:last-child > label{
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -405,9 +417,7 @@ nav li a:hover, nav li a:active {
     margin-right: -20px;
 }
 .project-array{
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     max-width: 1000px;
     padding-top: 40px;
 }
@@ -423,7 +433,6 @@ nav li a:hover, nav li a:active {
     position: relative;
     top: -4.2rem;
     margin-left: 0.65rem;
-    display: flex;
     justify-content: center;
     max-width: 200px;
     background-color: rgba(0,0,0,0.4);
@@ -436,7 +445,6 @@ nav li a:hover, nav li a:active {
     color: var(--main-text-color);
     border-radius: 50%;
     border: 2px solid #fff;
-    display: flex;
     right:10px;
     top: -16px;
     opacity: 1;
@@ -555,15 +563,12 @@ textarea{
 	background-color: var(--main-text-color);
     color: #fff;
     font-weight: bold;
-    text-decoration: none;
     border-radius: 4px;
     border: 0;
-    width: 100px !important;
+    width: 110px !important;
     box-shadow: 0 3px 0 0 #4494bb;
 }
 #googlemap-overlay{
-    width: 100%;
-    height: 100%;
     max-height: 600px;
     background: var(--main-text-color);
     position: absolute;
@@ -612,7 +617,6 @@ textarea{
         left: 5%;
     }
     .project-array{
-        padding: 0;
         padding-top: 30px;
     }
     .img-text > h2, .main-color{
@@ -630,7 +634,9 @@ textarea{
     .dropdown-content > a:hover ~ .dropbtn{
         display: none;
     }
-    .navbar-title{
+    .navbar-title,
+    .project-array,
+    #logo{
         padding: 0;
     }
     #logo-feature,
@@ -643,22 +649,19 @@ textarea{
         width: 100%;
         height: auto;
     }
-    .services-container{
+    .services-container,
+    .dropdown{
         flex-direction: column;
     }
     #carousel{
         padding-top: 52px;
     }
     #logo{
-        float:none;
         width: 200px;
         height: auto;
-        padding: 0;
         margin-top: 10px;
     }
     .dropdown{
-        display: flex;
-        flex-direction: column;
         padding-top: 0;
     }
     .navbar-menu{
@@ -708,8 +711,15 @@ textarea{
         margin: 0;
         line-height: 1rem;
     }
+    .dropdown-content{
+        margin-left: -2rem;
+    }
+    .dropdown-content,
+    .img-text > h2,
+    .main-color{
+        width: 100% !important;
+    }
     .img-text > h2, .main-color{
-        width: 100%;
         margin-top: 1rem;
         font-size: 0.8rem;
     }
