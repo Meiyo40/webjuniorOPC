@@ -58,6 +58,13 @@ h2{
 #googlemap-overlay{
     width: 100%;
 }
+.description > div,
+.carousel > .img-text,
+.carousel > label,
+.btn-slider,
+#submit-form{
+    color: #fff;
+}
 .navbar,
 .navbar-menu,
 .divider,
@@ -155,25 +162,8 @@ nav li a:hover, nav li a:active {
 #i1,#i2{
     display: none;
 }
-.prev, .next{
-    width: 1%;
-    height: inherit;
-    position: absolute;
-    z-index: 1;
-    transition: .45s;
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    background: rgba(51,51,51,0.3)
-}
-.prev:hover, .next:hover{
-    transition: .3s;
-    background-color: rgba(88, 88, 89,.8);
-    color: #fff; 
-}
 .carousel > .img-text{
 	position:absolute;
-	color: #fff;
     max-width: 600px;
     top: 30%;
     left: 10%;
@@ -192,7 +182,6 @@ nav li a:hover, nav li a:active {
     top: 1rem !important;
 	padding: 12px;
 	background-color: var(--main-text-color);
-    color: #fff;
     font-weight: bold;
     border-radius: 4px;
     border-bottom: 2px solid var(--main-text-color);
@@ -238,12 +227,8 @@ nav li a:hover, nav li a:active {
 .carousel > label {
     position:absolute;
     top:47%;
-    height:inherit;
-    color: #fff;
     transition: .45s;
     cursor: pointer;
-    text-align: center;
-    color: #fff;
 }
 .carousel > label:hover{
     transition: .5s;
@@ -263,39 +248,11 @@ nav li a:hover, nav li a:active {
     border-bottom-left-radius: 100px;
     border-top-left-radius: 100px;
 }
-.carousel > label:before {
-    content:'';
-    display:block;
-    position:absolute;
-    width:100%;
-    height:100%;
-    visibility:visible;
-}
-.carousel > label:after {
-    display:block;
-    position:absolute;
-    top:50%;
-    width:25px;
-    height:25px;
-    line-height:22px;
-    margin:-15px 10px 0 10px;
-    color:#fff;
-    font-family:'Arial';
-    font-weight:bold;
-    font-size:18px;
-    text-align:center;
- 
-}
-.carousel > label:hover:after {
-    visibility:visible;
-}
-
 .carousel > input:checked + label:after {
     left:0;
 }
 .carousel > input:checked ~ label ~ label ~ label:after {
     right:0;
-
 }
 /*SERVICES*/
 .divider{
@@ -321,7 +278,6 @@ nav li a:hover, nav li a:active {
     right:0;
 }
 #services > p, #portfolio > p{
-    text-align: center;
     max-width: 400px;
     padding-bottom: 50px;
 }
@@ -368,7 +324,6 @@ nav li a:hover, nav li a:active {
 }
 #portfolio-navbar > li > label{
     background: rgba(177,187,191,0.3);
-    text-align: center;
     color: #6f797d;
     padding: 10px;
     font-weight: bold;
@@ -377,7 +332,6 @@ nav li a:hover, nav li a:active {
     background: #12b1e4;
     color: #fff;
 }
-
 #portfolio-navbar > li:last-child > label{
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -434,15 +388,7 @@ nav li a:hover, nav li a:active {
 }
 .fa-eye{
     font-size: 0.70rem !important;
-    text-align: center;
-    margin-top: 8px;
-    margin-left: 8px;
-}
-.description > div{
-    font-size: 14px;
-    display: block;
-    color: #fff;
-    opacity: 1;
+    margin: 8px 0 0 8px;
 }
 .description > div > h4, .description > div > p{
     letter-spacing: 0.01rem;
@@ -491,8 +437,6 @@ nav li a:hover, nav li a:active {
     display: inline-block;
     margin: 0 auto;
 }
-
-
 /*CONTACT*/
 .contact-container{
     position: relative;
@@ -537,13 +481,11 @@ textarea{
     height: 100px !important;
 }
 #contact-form > input, #contact-form > textarea{
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin: 4px 0 0 4px;
 }
 #submit-form{
     padding: 7px;
 	background-color: var(--main-text-color);
-    color: #fff;
     font-weight: bold;
     border-radius: 4px;
     border: 0;
@@ -604,13 +546,13 @@ textarea{
         letter-spacing:0.04rem;
     }
     .navbar{
-        flex-direction: column;
         height: 6.5rem;
     }
     .description{
         top: -4.20rem;
     }
-    .dropdown-content > a:hover ~ .dropbtn{
+    .dropdown-content > a:hover ~ .dropbtn,
+    .navbar-menu{
         display: none;
     }
     .arrow-down{
@@ -632,6 +574,7 @@ textarea{
     #logo-feature, .navbar{
         height: auto;
     }
+    .navbar,
     .services-container,
     .dropdown{
         flex-direction: column;
@@ -647,9 +590,6 @@ textarea{
     .dropdown{
         padding-top: 0;
     }
-    .navbar-menu{
-        display: none;
-    }
     .fa-chevron-left, .fa-chevron-right{
         margin-top: 50%;
     }
@@ -663,7 +603,6 @@ textarea{
         border-bottom-left-radius: 60px;
         border-top-left-radius: 60px;
     }
- 
     .btn-slider{
         letter-spacing: 0px;
     }
@@ -725,6 +664,4 @@ textarea{
     }
 }
 /*FOOTER*/
-footer{
-    text-align: center;
-}
+footer{text-align: center;}
