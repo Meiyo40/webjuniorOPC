@@ -635,16 +635,18 @@ textarea{
         font-size: 1.4rem;
         letter-spacing:0.04rem;
     }
-
     .navbar{
         flex-direction: column;
         height: 6.5rem;
     }
     .description{
-        top: -4.70rem;
+        top: -4.20rem;
     }
     .dropdown-content > a:hover ~ .dropbtn{
         display: none;
+    }
+    .arrow-down{
+        top: 23px;
     }
     .navbar-title,
     #logo{
@@ -715,9 +717,6 @@ textarea{
         max-height: 200px;
         left: 1% !important;
     }
-    .arrow-down{
-        top: 20px;
-    }
     .img-text > h2, .img-text > p, .btn-slider, .main-color{
         word-spacing: 0rem;
         font-size: 0.55rem;
@@ -744,9 +743,7 @@ textarea{
     .btn-slider{
         padding: 5px !important;
     }
-    .arrow-down{
-        top: 23px;
-    }
+    
     #portfolio-navbar > li > *{
         font-size: 0.8rem;
     }
