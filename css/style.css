@@ -222,6 +222,18 @@ nav li a:hover, nav li a:active {
     border-bottom: 2px solid var(--main-text-color);
     box-shadow: 0 3px 0 0 #4494bb;
 }
+.btn-slider:hover{
+    animation-duration: 1s;
+    animation-name: anim-btnSlider;
+}
+@keyframes anim-btnSlider{
+    from{
+        font-size: 1rem;
+    }
+    to{
+        font-size: 1.2rem;
+    }
+}
 .carousel > img {
   display:none;
   width:100%;
@@ -635,7 +647,6 @@ textarea{
         display: none;
     }
     .navbar-title,
-    .project-array,
     #logo{
         padding: 0;
     }
@@ -645,8 +656,10 @@ textarea{
     #contact-form{
         margin: 0 auto;
     }
-    #logo-feature, .navbar{
+    .navbar{
         width: 100%;
+    }
+    #logo-feature, .navbar{
         height: auto;
     }
     .services-container,
