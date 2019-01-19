@@ -25,6 +25,10 @@ body{
 h2{
     font-size: 2rem;
     letter-spacing: -0.1rem;
+}
+h2, 
+#portfolio > p,
+#services > p{
     text-align: center;
 }
 .dropdown-content > a,
@@ -388,7 +392,9 @@ nav li a:hover, nav li a:active {
 }
 .fa-eye{
     font-size: 0.70rem !important;
-    margin: 8px 0 0 8px;
+    display:flex;
+    align-self: center;
+    margin: 0 auto;
 }
 .description > div > h4, .description > div > p{
     letter-spacing: 0.01rem;
@@ -501,6 +507,10 @@ textarea{
     left: 0px;
     z-index: 2;
 }
+/*FOOTER*/
+footer{text-align: center;}
+
+/*GESTION RESPONSIVE*/
 @media screen and (max-width: 1200px){
     .carousel > .img-text{
         left: 5%;
@@ -663,5 +673,3 @@ textarea{
         max-width: 320px;
     }
 }
-/*FOOTER*/
-footer{text-align: center;}
