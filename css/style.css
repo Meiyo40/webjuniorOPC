@@ -15,8 +15,7 @@ html{
     font-size: 100%;
     font-family: 'robotoregular', sans-serif;
 }
-body{
-    height: 100%;
+body, h1{
     margin: 0;
 }
 .main-color{
@@ -170,7 +169,7 @@ nav li a:hover, nav li a:active {
 	position:absolute;
     max-width: 600px;
     top: 30%;
-    left: 10%;
+    left: 12%;
     font-weight: 500;
 }
 .img-text > h2{
@@ -180,7 +179,6 @@ nav li a:hover, nav li a:active {
     font-size: 2.5rem;
     margin-bottom: 0;
     transform: scale(0.9,1);
-    font-weight: 700;
 }
 .btn-slider{
     top: 1rem !important;
@@ -337,12 +335,12 @@ nav li a:hover, nav li a:active {
     color: #fff;
 }
 #portfolio-navbar > li:last-child > label{
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 #portfolio-navbar > li:first-child > label{
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .arrow-down {
