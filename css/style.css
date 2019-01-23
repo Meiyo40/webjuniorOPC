@@ -365,7 +365,6 @@ nav li a:hover, nav li a:active {
     height: auto;
 }
 .project-array > li {
-    
     max-height: 155px;
     padding-bottom: 30px;
 }
@@ -545,6 +544,7 @@ footer{text-align: center;}
     }
 }
 @media screen and (max-width: 780px){
+    
     *{
         font-size: 0.95rem;
     }
@@ -629,6 +629,13 @@ footer{text-align: center;}
         left: 0;
         background-color: rgb(234,233,224);
     }
+     .project-array > li{
+        padding-bottom: 70px;
+    }
+    .project-array > li > a > img,
+    .project-array > li > .description{
+        max-width: 300px;
+    }
 }
 @media screen and (max-width: 480px){
     .navbar{
@@ -673,10 +680,8 @@ footer{text-align: center;}
         width: 120px;
         text-align: center;
     }
-    .project-array > li > a > img{
-        width: 100%;
-        height: auto;
-    }
+   
+ 
     .img-text > h2, .main-color{
         margin-top: 1rem;
         font-size: 0.8rem;
