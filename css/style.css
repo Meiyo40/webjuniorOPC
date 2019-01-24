@@ -575,7 +575,9 @@ footer{text-align: center;}
     #logo{
         padding: 0;
     }
-    #logo-feature,
+    #logo-feature{
+        align-self: center;
+    }
     .navbar-title,
     .dropdown,
     #contact-form{
