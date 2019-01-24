@@ -575,7 +575,7 @@ footer{text-align: center;}
     #logo{
         padding: 0;
     }
-    #logo-feature{
+    .services-container > div:first-child{
         align-self: center;
     }
     .navbar-title,
