@@ -672,6 +672,7 @@ footer{text-align: center;}
         align-items: center; 
     }
     #portfolio-navbar > li > label{
+        padding: 15px 30px;
         background: none;
     }
     #portfolio-navbar > li{
@@ -680,8 +681,6 @@ footer{text-align: center;}
         width: 120px;
         text-align: center;
     }
-   
- 
     .img-text > h2, .main-color{
         margin-top: 1rem;
         font-size: 0.8rem;
@@ -700,13 +699,15 @@ footer{text-align: center;}
     }
     .arrow-down {
         top: 32px;
-        left: -50px;        
+        left: -65px;        
+    }
+    #portfolio-navbar > li > label{
+       
     }
     #r1:checked ~ #portfolio-navbar > .btn-1,
     #r2:checked ~ #portfolio-navbar > .btn-2,
     #r3:checked ~ #portfolio-navbar > .btn-3,
     #r4:checked ~ #portfolio-navbar > .btn-4{
-        width: 120px;
         font-weight: bold;
         background: var(--main-text-color) !important;
         box-shadow: 0 -3px 0 0 #468cad inset;
@@ -716,6 +717,11 @@ footer{text-align: center;}
     #r3:checked ~ #portfolio-navbar > .btn-3 > label,
     #r4:checked ~ #portfolio-navbar > .btn-4 > label{
         box-shadow: none;
+    }
+    #portfolio-navbar > li:hover,
+    #portfolio-navbar > li:hover > label{
+    background: var(--main-text-color);
+    color: #fff;
     }
     #portfolio-navbar > li:first-child{
     border-top-right-radius: 5px;
