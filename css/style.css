@@ -297,22 +297,27 @@ nav li a:hover, nav li a:active {
     line-height: 1.4rem;
 }
 .circle-icon{
-    margin-top: 0.8rem;
+    margin-top: 1.8rem;
     margin-right: 0.6rem;
-    width: 1.3rem;
-    height: 1.3rem;
-    padding: 1.3rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 1.7rem;
     border: 1px solid rgba(51,51,51,0.3);;
     border-radius: 50%;
 }
 .circle-icon > .blue-circle{
-    margin-left: 2.05rem;
+    margin-left: 2.85rem;
     margin-top: -1.4rem;
 }
 .service-icon{
     font-size: 1.7rem;
-    margin: -3px;
+    margin-left: 3px;
     color: var(--main-text-color);
+}
+#services > p,
+.feature-text{
+    padding-bottom: 11px;
+    padding-top: 11px;
 }
 /*PORTFOLIO*/
 #portfolio{
@@ -500,16 +505,19 @@ textarea{
     box-shadow: 0 3px 0 0 #4494bb;
 }
 #googlemap-overlay{
-    max-height: 600px;
+    height: 600px;
     background: var(--main-text-color);
     position: absolute;
     opacity: 0.3;
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 5;
 }
 /*FOOTER*/
-footer{text-align: center;}
+footer{
+    background-color: #f5f5f5;
+    text-align: center;
+}
 
 /*GESTION RESPONSIVE*/
 @media screen and (max-width: 1200px){
@@ -544,36 +552,48 @@ footer{text-align: center;}
     }
 }
 @media screen and (max-width: 780px){
-    
-    *{
-        font-size: 0.95rem;
+    /*GENERAL*/
+    p,h4{
+        font-size:  1.5rem;
     }
-    .carousel > .img-text{
-        left: 5%;
-    }
-    .project-array{
-        padding: 30px 0;
-    }
-    .img-text > h2, .main-color{
-        font-size: 1.4rem;
-        letter-spacing:0.04rem;
-    }
+    /*NAVBAR*/
     .navbar{
         height: 6.5rem;
     }
-    .description{
-        top: -4.20rem;
+    .navbar-title,
+    #logo{
+        padding: 0;
     }
     .dropdown-content > a:hover ~ .dropbtn,
     .navbar-menu{
         display: none;
     }
-    .arrow-down{
-        top: 27px;
+    .dropdown{
+        padding-top: 0;
     }
-    .navbar-title,
     #logo{
-        padding: 0;
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+    }
+    /*CAROUSEL*/
+    #carousel{
+        padding-top: 82px;
+    }
+    
+    .carousel > .img-text{
+        left: 5%;
+    }
+    
+    .img-text > *{
+        margin: 0;
+    }
+    .img-text > h2,
+    .img-text > .main-color,
+    .img-text > p
+    {
+        font-size: 1.8rem;
+        letter-spacing:0.04rem;
     }
     .services-container > div:first-child{
         align-self: center;
@@ -583,27 +603,14 @@ footer{text-align: center;}
     #contact-form{
         margin: 0 auto;
     }
-    .navbar{
-        width: 100%;
-    }
     #logo-feature, .navbar{
+        width: 100%;
         height: auto;
     }
     .navbar,
     .services-container,
     .dropdown{
         flex-direction: column;
-    }
-    #carousel{
-        padding-top: 82px;
-    }
-    #logo{
-        width: 200px;
-        height: auto;
-        margin-top: 10px;
-    }
-    .dropdown{
-        padding-top: 0;
     }
     .fa-chevron-left, .fa-chevron-right{
         margin-top: 50%;
@@ -619,24 +626,51 @@ footer{text-align: center;}
         border-top-left-radius: 60px;
     }
     .btn-slider{
+        left: 100px;
+        font-size: 1.5rem;
         letter-spacing: 0px;
     }
-    .img-text > *{
-        font-size: 0.8rem;
-        margin: 0;
+    /*SERVICES*/
+    #services > p,
+    .feature-text{
+        padding: 7px;
     }
-    #contact-form{
-        position: relative;
-        top: 0;
-        left: 0;
-        background-color: rgb(234,233,224);
+    /*PORTFOLIO*/
+    
+    .project-array{
+        padding: 30px 0;
     }
-     .project-array > li{
+    .project-array > li{
         padding-bottom: 70px;
     }
     .project-array > li > a > img,
     .project-array > li > .description{
         max-width: 300px;
+    }
+    .description{
+        top: -5.55rem;
+    }
+    .description > div > p,
+    .description > div > h4{
+        font-size: 1.2rem;
+    }
+    .arrow-down{
+        top: 27px;
+    }
+    .project-logo{
+        height: 35px;
+        width: 35px;
+        right: 18px;
+    }
+    .fa-eye{
+        font-size: 0.90rem !important;
+    }
+    /*CONTACT*/
+    #contact-form{
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgb(234,233,224);
     }
 }
 @media screen and (max-width: 480px){
