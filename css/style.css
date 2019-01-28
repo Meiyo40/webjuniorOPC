@@ -122,6 +122,7 @@ nav li a:hover, nav li a:active {
     padding-left: 10%;
 }
 .dropbtn{
+    font-size: 1.3rem;
     background-color: #fff;
     border: none;
 	padding-bottom: 4px;
@@ -511,7 +512,7 @@ textarea{
     opacity: 0.3;
     top: 0px;
     left: 0px;
-    z-index: 5;
+    z-index: 3;
 }
 /*FOOTER*/
 footer{
@@ -648,7 +649,7 @@ footer{
         max-width: 300px;
     }
     .description{
-        top: -5.55rem;
+        top: -5.65rem;
     }
     .description > div > p,
     .description > div > h4{
