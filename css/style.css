@@ -185,13 +185,13 @@ CARROUSEL
 
 */
 .text-container{
-    margin-top: 50px;
     position:absolute;
     left:50%;
     display: flex;
     width: 1200px;
 }
 .img-text{
+    padding-top: 40px;
     position:relative;;
     left: -50%;
     margin-left: 20px;
@@ -630,9 +630,6 @@ GESTION RESPONSIVE
     .project-array{
         width: 600px;
     }
-    .carousel > .text-container{
-        margin-top: 25px;
-    }
     .carousel > .text-container >  .img-text{
         max-width: 550px;
     }
@@ -703,13 +700,13 @@ GESTION RESPONSIVE
     
     */
     #accueil{
-        padding-top: 82px;
-    }
-    .text-container{
-        margin-top: 30px;
+        padding-top: 120px;
     }
     .img-text > *{
         margin: 0;
+    }
+    .img-text{
+        padding-top: 20px;
     }
     .img-text > h2,
     .img-text > .main-color,
@@ -846,6 +843,7 @@ GESTION RESPONSIVE
         background-color: rgba(0,0,0,0.6);
     }
     .carousel > .text-container > .img-text{
+        padding-top: 10px;
         left: -1%;
     }
     .img-text > h2, 
