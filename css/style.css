@@ -107,7 +107,6 @@ Navigation
 */
 .navbar{
     z-index: 99;
-    height: 6rem;
     margin-bottom: 52px;
     position: fixed;
     flex-wrap: nowrap;
@@ -116,7 +115,7 @@ Navigation
     overflow:hidden;
     align-items: center;
 }
-.navbar-title, .element{
+.element{
     margin-top: 20px;
 }
 .element > a{
