@@ -190,7 +190,7 @@ CARROUSEL
     width: 1200px;
 }
 .img-text{
-    padding-top: 40px;
+    padding-top: 145px;
     position:relative;;
     left: -50%;
     margin-left: 20px;
@@ -632,7 +632,9 @@ GESTION RESPONSIVE
     .carousel > .text-container >  .img-text{
         max-width: 550px;
     }
-    
+    .img-text{
+        padding-top: 40px;
+    }
 }
 @media screen and (max-width: 600px){
     .project-array{
