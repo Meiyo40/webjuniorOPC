@@ -7,7 +7,8 @@
         <meta name="author" content="LDM">
         
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link rel="icon" type="image/png" href="css/images/icon.png">
+        <link rel="stylesheet" href="css/responsive.css" type="text/css">
+        <link rel="icon" type="image/png" href="assets/images/icon.png">
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
         
         <title>Web Agency, concrétisons vos projets web.</title>
@@ -15,19 +16,16 @@
     <body>
         <nav class="navbar">
             <div class="navbar-title">
-                <h1><a href="#"><img id="logo" src="css/images/logo.png" alt="Web Agency logo"></a></h1>
+                <h1><a href="#"><img id="logo" src="assets/images/logo.png" alt="Web Agency logo"></a></h1>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Menu de navigation<i class="fa fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                    <a href="#carousel" >Accueil</a>
-                    <a href="#services" >Services</a>
-                    <a href="#portfolio" >Portfolio</a>
-                    <a href="#contact" >Contact</a>
-                </div>
-            </div> 
+            <ul class="sm-menu">
+                    <li><a href="#accueil" >Accueil</a></li>
+                    <li><a href="#services" >Services</a></li>
+                    <li><a href="#portfolio" >Portfolio</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+            </ul>
             <ul class="navbar-menu">
-                <li class="element"><a href="#carousel" >Accueil</a></li>
+                <li class="element"><a href="#accueil" >Accueil</a></li>
                 <li class="element"><a href="#services" >Services</a></li>
                 <li class="element"><a href="#portfolio" >Portfolio</a></li>
                 <li class="element"><a href="#contact" >Contact</a></li>
@@ -46,10 +44,10 @@
                         </div>
                         <input id="image1" type="radio" name="image-selector" checked="checked" />
                         <label for="image2"><span class="fas fa-chevron-left"></span></label>
-                        <img src="css/images/slider/bg1.jpg" alt="First background carousel"/>
+                        <img src="assets/images/slider/bg1.jpg" alt="First background carousel"/>
                         <input id="image2" type="radio" name="image-selector" />
                         <label for="image1"><span class="fas fa-chevron-left"></span></label>
-                        <img src="css/images/slider/bg2.jpg" alt="Second background carousel"/>
+                        <img src="assets/images/slider/bg2.jpg" alt="Second background carousel"/>
                         <label for="image2"><span class="fas fa-chevron-right"></span></label>
                         <label for="image1"><span class="fas fa-chevron-right"></span></label>
                     </div>
@@ -63,7 +61,7 @@
                 <p>Vous trouverez ci dessous une liste non exhaustive des services principaux que nous proposons.</p>
                 <div class="services-container">
                     <div>
-                        <img id="logo-feature" src="css/images/main-feature.png" alt="Logo Main Feature">
+                        <img id="logo-feature" src="assets/images/main-feature.png" alt="Logo Main Feature">
                     </div>
                     <ul class="feature-list">
                         <li>
@@ -111,53 +109,92 @@
                 
                 <div class="project-container">
                     <ul class="project-array">
-                        <li class="element portfolio-item"><a><img src="css/images/portfolio/01.jpg" alt="Img Portfolio #01"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Optical market</h4><p>Site vitrine pour un opticien</p></div>
-                        </div>
+                        <li class="element portfolio-item">
+                            <figure>
+                                <a><img src="assets/images/portfolio/01.jpg" alt="Img Portfolio #01"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Optical market</strong><br>
+                                    Site vitrine pour un opticien</p>
+                                </figcaption>
+                            </figure>
                         </li>
-                        <li class="element creative"><a><img src="css/images/portfolio/02.jpg" alt="Img Portfolio #02"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Graphic'Art</h4><p>Le partage pour graphiste</p></div>
-                        </div>
-                        </li>                        
-                        <li class="element portfolio-item"><a><img src="css/images/portfolio/03.jpg" alt="Img Portfolio #03"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Les Pompadour</h4><p>Site de présentation musicale</p></div>
-                        </div>
+                        
+                        <li class="element creative">
+                            <figure>
+                                <a><img src="assets/images/portfolio/02.jpg" alt="Img Portfolio #02"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Graphic'Art</strong><br>
+                                    Le partage pour graphiste</p>
+                                </figcaption>
+                            </figure>
+                        </li>  
+                        
+                        <li class="element portfolio-item">
+                            <figure>
+                                <a><img src="assets/images/portfolio/03.jpg" alt="Img Portfolio #03"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Les Pompadour</strong><br>
+                                    Site de présentation musicale</p>
+                                </figcaption>
+                            </figure>
                         </li>
-                        <li class="element creative"><a><img src="css/images/portfolio/04.jpg" alt="Img Portfolio #04"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Origami pour tous</h4><p>Site de partage sur l'Origami</p></div>
-                        </div>
+                        
+                        <li class="element creative">
+                            <figure>
+                                <a><img src="assets/images/portfolio/04.jpg" alt="Img Portfolio #04"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Origami pour tous</strong><br>
+                                    Site de partage sur l'Origami</p>
+                                </figcaption>
+                            </figure>
                         </li>
-                        <li class="element corporate"><a><img src="css/images/portfolio/05.jpg" alt="Img Portfolio #05"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Easy market</h4><p>Site E-Commerce prêt à porter</p></div>
-                        </div>
+                        
+                        <li class="element corporate">
+                            <figure>
+                                <a><img src="assets/images/portfolio/05.jpg" alt="Img Portfolio #05"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Easy market</strong><br>
+                                    Site E-Commerce prêt à porter</p>
+                                </figcaption>
+                            </figure>
                         </li>
-                        <li class="element corporate"><a><img src="css/images/portfolio/06.jpg" alt="Img Portfolio #06"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Bati'Mars</h4><p>Entreprise de BTP marsienne</p></div>
-                        </div>
+                        
+                        <li class="element corporate">
+                            <figure>
+                                <a><img src="assets/images/portfolio/06.jpg" alt="Img Portfolio #06"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Bati'Mars</strong><br>
+                                    Entreprise de BTP marsienne</p>
+                                </figcaption>
+                            </figure>
                         </li>
-                        <li class="element corporate"><a><img src="css/images/portfolio/07.jpg" alt="Img Portfolio #07"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Lunar Aerospace</h4><p>Site spécialisé sur l'espace</p></div>
-                        </div>
+                        
+                        <li class="element corporate">
+                            <figure>
+                                <a><img src="assets/images/portfolio/07.jpg" alt="Img Portfolio #07"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Lunar Aerospace</strong><br>
+                                    Site spécialisé sur l'espace</p>
+                                </figcaption>
+                            </figure>
                         </li>
-                        <li class="element creative"><a><img src="css/images/portfolio/08.jpg" alt="Img Portfolio #08"></a>
-                        <div class="description">
-                            <div class="project-logo"><i class=" far fa-eye"></i></div>
-                            <div><h4>Le lycéen</h4><p>Site de soutiens aux lycéens</p></div>
-                        </div>
+                        
+                        <li class="element creative">
+                            <figure>
+                                <a><img src="assets/images/portfolio/08.jpg" alt="Img Portfolio #08"></a>
+                                <figcaption>
+                                    <div class="project-logo"><i class=" far fa-eye"></i></div>
+                                    <p><strong>Le lycéen</strong><br>
+                                    Site de soutiens aux lycéens</p>
+                                </figcaption>
+                            </figure>
                         </li>
                     </ul>
                 </div>
@@ -170,8 +207,8 @@
                     <div class="form-container">
                         <form id="contact-form">
                             <h4>Contact Info</h4>
-                            <h6>WebAgency SAS</h6>
-                            <p>25 Rue d'Hauteville 75010 Paris <br>
+                            <p><strong>WebAgency SAS</strong><br>
+                            25 Rue d'Hauteville 75010 Paris <br>
                             Tél: 01 02 03 04 05</p>
                             <input type="text" placeholder="Name" required>
                             <input type="email" placeholder="Email" required>
