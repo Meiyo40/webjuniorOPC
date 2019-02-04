@@ -106,6 +106,7 @@ Navigation
 */
 .navbar{
     z-index: 99;
+    padding: 10px 0;
     margin-bottom: 52px;
     position: fixed;
     flex-wrap: nowrap;
@@ -114,16 +115,13 @@ Navigation
     overflow:hidden;
     align-items: center;
 }
-.element{
-    margin-top: 20px;
-}
 .element > a{
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     color: #000;
 }
 nav .navbar-menu li a:hover, nav .navbar-menu li a:active {
-    padding-top: 33px;
+    padding-top: 28px;
     border-top: 4px solid var(--main-text-color);
 }
 #logo,
@@ -593,18 +591,6 @@ textarea{
     box-shadow: 0 3px 0 0 #4494bb;
 }
 
-/*
 
-
-FOOTER
-
-
-*/
-footer{
-    background-color: #f5f5f5;
-    text-align: center;
-    
-    padding: 30px;
-}
 
 
