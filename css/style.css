@@ -340,6 +340,9 @@ SERVICES
 #logo-feature{
     max-height: 319px;
 }
+.feature-list{
+    padding: 5px;
+}
 .feature-text{
     padding-bottom: 1rem;
 }
@@ -387,6 +390,9 @@ PORTFOLIO
 #portfolio-navbar{
     justify-content: center;
     padding: 10px;
+}
+#portfolio-navbar > li{
+    margin-right: -4px;
 }
 #portfolio-navbar > li > label{
     background: rgba(177,187,191,0.3);
@@ -566,7 +572,7 @@ iframe{
     margin-top: -8px;
 }
 #contact-form > p{
-    font-size: 12px;
+    font-size: 17px;
     letter-spacing: 0.3px;
 }
 #contact-form > input, textarea{
